@@ -1,0 +1,20 @@
+アドオンの確認
+vcf package available list -n tkg-system
+
+リポジトリの登録
+Vcf package repository add default-addon-repo-install —url depot.kube-system.svc/vcf/vks-standard-packages/ga/3.6.0-20260211/vks-standard-packages:3.6.0-20260211 -n tkg-system
+
+アドオンの確認
+vcf package available list -n tkg-system
+
+Cert-manager バージョンの確認
+vcf package available get cert-manager.kubernetes.vmware.com -n tkg-system
+
+Cert-manager のインストール
+vcf package install cert-manager -p cert-manager.kubernetes.vmware.com —version 1.19.2+vmware.1-vks.1 -n tkg-system
+
+Istio バージョンの確認
+vcf package available get istio.kubernetes.vmware.com -n tkg-system
+
+Istio のインストール
+vcf package install istio -p istio.kubernetes.vmware.com —version 1.28.2+vmware.1-vks.1 -n tkg-system
