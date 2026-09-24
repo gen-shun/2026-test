@@ -11,10 +11,10 @@ Cert-manager バージョンの確認
 vcf package available get cert-manager.kubernetes.vmware.com -n tkg-system
 
 Cert-manager のインストール
-vcf package install cert-manager -p cert-manager.kubernetes.vmware.com —version 1.19.2+vmware.1-vks.1 -n tkg-system
+vcf package install cert-manager -p cert-manager.kubernetes.vmware.com --version 1.19.2+vmware.1-vks.1 -n tkg-system
 
 Istio バージョンの確認
 vcf package available get istio.kubernetes.vmware.com -n tkg-system
 
 Istio のインストール
-vcf package install istio -p istio.kubernetes.vmware.com —version 1.28.2+vmware.1-vks.1 -n tkg-system
+vcf package install istio -p istio.kubernetes.vmware.com --version 1.28.2+vmware.1-vks.1 -n tkg-system
