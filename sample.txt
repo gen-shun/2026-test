@@ -18,4 +18,4 @@ vcf package available get istio.kubernetes.vmware.com -n tkg-system
 
 Istio のインストール
 vcf package install istio -p istio.kubernetes.vmware.com --version 1.28.2+vmware.1-vks.1 -n tkg-system
-vcf package delete installed istio -n tag-system
+vcf package installed delete <INSTALLED_PACKAGE_NAME> -n <NAMESPACE>
