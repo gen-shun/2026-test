@@ -1,3 +1,7 @@
+https://labplatform.broadcom.com/console?accessToken=POFpC3kiNuJglh90j8gp/sxVpwU3y3oJoJYOMI9u9G3XeJlGQST192p7EDRNas4uH4eiISbBrM4=
+
+
+
 アドオンの確認
 vcf package available list -n tkg-system
 
