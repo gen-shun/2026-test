@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: harnesswork
+  namespace: default
+  labels:
+    app: harnesswork
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: harnesswork
+  template:
+    metadata:
+      labels:
+        app: harnesswork
+    spec:
+      containers:
+        - name: harnesswork
+          image: genshun/harnesswork:v1.0.0
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: harnesswork
+  namespace: default
+spec:
+  type: ClusterIP
+  selector:
+    app: harnesswork
+  ports:
+    - port: 80
+      targetPort: 3000
